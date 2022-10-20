@@ -166,6 +166,6 @@ end
 H = NormalizeFea(H,0);
 result = kmeans(H, classnum, 'emptyaction', 'singleton', 'replicates', 100, 'display', 'off');
 
-plot(obj_o);
+% plot(obj_o);
 
 end
