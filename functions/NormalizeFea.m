@@ -50,7 +50,4 @@ else
         feaNorm = sum(fea.^2,1).^.5;
         fea = fea./feaNorm(ones(1,mFea),:);
     end
-end
-            
-
-
+end           

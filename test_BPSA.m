@@ -2,12 +2,12 @@ clc
 close all
 
 %% 
-addpath('data'); addpath('functions'); addpath('Measures');
+addpath('data'); addpath('functions'); 
 Files = dir(fullfile('data', '*.mat'));
 Max_datanum = length(Files);
 
 %% 
-for data_num = 1:Max_datanum  
+for data_num = 6:Max_datanum  
     Dname = Files(data_num).name;
     disp(['***********The test data name is: ***' num2str(data_num) '***'  Dname '****************'])
     load(Dname);
@@ -29,7 +29,7 @@ for data_num = 1:Max_datanum
             flag2 = fla2(k);
             
              [lab,H,obj_o,alpha,beta] = BPSA(X,classnum,knn,flag1,flag2);
-             result_BPSA = ClusteringMeasure_new(Y,lab);
+             result_BPSA = ClusteringMeasure(Y,lab);
             
              file_name = [folder_name '_Uv_' num2str(flag1) '_H_' num2str(flag2) '.mat'];
              save ([file_mat_path,file_name],'Dname','result_BPSA','lab','H','obj_o','alpha','beta');
