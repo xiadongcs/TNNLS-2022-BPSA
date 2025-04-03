@@ -1,17 +1,18 @@
 # Bidirectional Probabilistic Subspaces Approximation for Multiview Clustering
 
-Here is an implementation for our paper published in TNNLS 2022, entitled "Bidirectional Probabilistic Subspaces Approximation for Multiview Clustering".
+This is the official implementation of our paper published in TNNLS (2024), titled "Bidirectional Probabilistic Subspaces Approximation for Multiview Clustering".
 
-Run demo.m to reproduce our results, please.
+To reproduce the results in our paper, please run demo.m.
 
-If you use this code, please cite it as follows:
+If you find this code helpful in your research, please kindly cite our work as follows:
 
 ```
-@article{wu2022bidirectional,
+@article{wu2024bidirectional,
   title={Bidirectional probabilistic subspaces approximation for multiview clustering},
   author={Wu, Danyang and Dong, Xia and Cao, Jianfu and Wang, Rong and Nie, Feiping and Li, Xuelong},
   journal={IEEE Transactions on Neural Networks and Learning Systems},
-  year={2022},
-  doi={10.1109/TNNLS.2022.3217032}}
-  publisher={IEEE}
+  volume={35},
+  number={7},
+  pages={8939--8953},
+  year={2024}
 }
